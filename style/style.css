@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('../image/background.png');
+	background-size: cover;
+	font-family: Tahoma;
+}
+
+.wrapper {
+	display: block;
+	background-color: white;
+	max-width: 995px;
+	margin: 37px auto;
+}
+
+.header {
+	font-family: Tahoma;
+	color: #128aa7;
+	font-size: 12px;
+	padding: 10px 25px 0; 
+}
+
+.logo {
+	position: relative;
+	margin: 10px 25px 0;
+}
+
+.logo_t {
+	position: absolute;
+	width: 283px;
+	text-align: center;
+	font-size: 12px;
+	margin-top: -57px;
+}
+
+.contact {
+	display: block;
+	width: 15%;
+	float: right;
+	margin: 10px 25px 0;
+	font-size: 12px;
+}
+
+.country {
+	display: block;
+	width: 40%;
+	clear: both;
+	float: right;
+	margin-top: 35px; 
+}
+
+.india,
+.nepal,
+.tibet,
+.bhutan,
+.sri-lanka,
+.maldives {
+	display: inline-block;
+	width: 46px;
+	margin: 5px;
+	text-align: center;
+	font-size: 10px;
+}
+
+.country a { color: #128aa7; }
+
+.row {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	border-top: 2px solid #128aa7;
+	border-bottom: 2px solid #128aa7;
+	margin-top: -2px; 
+	margin-bottom: -5px; 
+}
+
+/*MENU*/
+
+ul.menu {
+	display: block;
+	list-style: none;
+	width: 100%;
+	background-color: black;
+}
+
+ul.menu:after {
+	display: block;
+	content: '';
+	clear: both;
+	float: none;
+}
+
+ul.menu > li {
+	position: relative;
+    float: left;
+}
+
+ul.menu > li > a {
+    display: block;
+    text-decoration: none;
+    width: 140px;
+    padding: 5px 1px;
+    margin: 0 auto 10px;
+    background-color: black;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+ }
+
+ul.menu > li > a:hover { background-color: black; }
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 140px;
+    top: 37px;
+    left: 0;
+    font-size: 14px;
+    background-color: rgb( 48, 48, 48 );
+    box-shadow: 2.5px 4.33px 5px 0px rgb( 0, 0, 0 );
+    z-index: 4;
+  }
+
+
+ul.submenu > li {
+    display: block;
+    text-decoration: none;
+}
+
+ul.submenu > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+ul.submenu > li > a:hover { text-decoration: underline; }
+
+ul.menu > li:hover > ul.submenu { display: block; }
+
+/*CONTENT*/
+.fon3 {
+	width: 100%;
+	float: left;
+	background-color: #edeef0;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.fon2 {
+	width: 100%;
+	float: left;
+	background-color: white;
+	position: relative;
+	right: 25%;
+	z-index: 1;
+}
+
+.fon1 {
+	width: 100%;
+	float: left;
+	background-color: #edeef0;
+	position: relative;
+	right: 50%;
+	z-index: 1;
+}
+
+.left_column {
+	width: 19%;
+	float: left;
+	position: relative;
+	left: 78%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.center_column {
+	width: 46%;
+	float: left;
+	position: relative;
+	left: 86%;
+	overflow: hidden;
+}
+
+.right-column {
+	width: 19%;
+	float: left;
+	position: relative;
+	left: 134%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.content p {
+	font-size: 14px;
+	color: #424c43;
+	height: 25px;
+}
+
+.banner {
+	text-align: center;
+	font-size: 18px;
+	color: #424c43;
+	height: 35px;
+}
+
+/*FOOTER*/
+.footer {
+	clear: both;
+	margin: 15px auto; 
+	padding-top: 20px;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	}
