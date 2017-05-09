@@ -12,8 +12,10 @@ body {
 .wrapper {
 	display: block;
 	background-color: white;
-	max-width: 995px;
-	margin: 37px auto;
+	max-width: 994px;
+	margin: 0 auto;
+	border: 1px solid black;
+	box-shadow: 2px 4px 5px 0px rgb( 0, 0, 0 );
 }
 
 .header {
@@ -79,143 +81,118 @@ body {
 
 /*MENU*/
 
-ul.menu {
+.menu {
 	display: block;
 	list-style: none;
-	width: 100%;
-	background-color: black;
+	line-height: 30px;
 }
 
-ul.menu:after {
+.clearfix::after {
 	display: block;
-	content: '';
+	content: "";
 	clear: both;
-	float: none;
 }
 
-ul.menu > li {
+.menu > li {
 	position: relative;
     float: left;
-}
+    background: #373737;
+ }
 
-ul.menu > li > a {
+.menu > li > a {
     display: block;
     text-decoration: none;
     width: 140px;
     padding: 5px 1px;
-    margin: 0 auto 10px;
-    background-color: black;
+    margin: 0 auto;
     text-align: center;
     font-size: 14px;
     color: white;
  }
 
-ul.menu > li > a:hover { background-color: black; }
+ .trigon a { position: relative; }
 
-ul.submenu {
+ .trigon:after {
+ 	content: ' '; 
+	position: absolute; 
+	height: 10px; 
+	top: 19px; 
+	border: 5px solid transparent; 
+	border-top: 5px solid white; 
+ }
+
+.menu > li > a:hover { background-color: #373737; }
+
+.submenu {
     display: none;
     position: absolute;
     width: 140px;
-    top: 37px;
+    top: 36px;
     left: 0;
     font-size: 14px;
+    line-height: 30px;
+    border-top: 1px solid black;
     background-color: rgb( 48, 48, 48 );
-    box-shadow: 2.5px 4.33px 5px 0px rgb( 0, 0, 0 );
+    box-shadow: 2px 4px 5px 0px rgb( 0, 0, 0 );
     z-index: 4;
   }
 
 
-ul.submenu > li {
+.submenu > li {
     display: block;
     text-decoration: none;
 }
 
-ul.submenu > li > a {
+.submenu > li > a {
     display: block;
     text-decoration: none;
     padding: 10px;
-    background-color: black;
     color: white;
     text-align: center;
 }
 
-ul.submenu > li > a:hover { text-decoration: underline; }
+.submenu > li > a:hover { text-decoration: underline; }
 
-ul.menu > li:hover > ul.submenu { display: block; }
+.menu > li:hover > ul.submenu { display: block; }
 
 /*CONTENT*/
-.fon3 {
+
+.container {
 	width: 100%;
-	float: left;
-	background-color: #edeef0;
 	overflow: hidden;
-	position: relative;
-	z-index: 1;
-}
-
-.fon2 {
-	width: 100%;
-	float: left;
-	background-color: white;
-	position: relative;
-	right: 25%;
-	z-index: 1;
-}
-
-.fon1 {
-	width: 100%;
-	float: left;
-	background-color: #edeef0;
-	position: relative;
-	right: 50%;
-	z-index: 1;
+	text-align: center;
+	line-height: 35px;
 }
 
 .left_column {
-	width: 19%;
+	width: 25%;
 	float: left;
-	position: relative;
-	left: 78%;
-	overflow: hidden;
-	text-align: center;
-}
-
-.center_column {
-	width: 46%;
-	float: left;
-	position: relative;
-	left: 86%;
-	overflow: hidden;
+	background: #edeef0;
+	border: 1px solid #c7cacf;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
 }
 
 .right-column {
-	width: 19%;
-	float: left;
-	position: relative;
-	left: 134%;
-	overflow: hidden;
-	text-align: center;
+	width: 25%;
+	float: right;
+	background: #edeef0;
+	border: 1px solid #c7cacf;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
 }
+.box2,
+.box3 {border-top: 1px solid #c7cacf;}
 
-.content p {
-	font-size: 14px;
-	color: #424c43;
-	height: 25px;
-}
-
-.banner {
-	text-align: center;
-	font-size: 18px;
-	color: #424c43;
-	height: 35px;
-}
 
 /*FOOTER*/
 .footer {
 	clear: both;
-	margin: 15px auto; 
-	padding-top: 20px;
+	margin: 0 auto; 
 	font-size: 12px;
 	color: white;
 	text-align: center;
-	}
+	line-height: 30px;
+}
+
+
